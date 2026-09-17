@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f7f2e6;
+  --paper-deep: #eee4d2;
+  --cream: #f7f2e6;
+  --ink: #1b365d;
+  --ink-soft: #4d5c73;
+  --taupe: #9a8368;
+  --gold: #d4a44a;
+  --sage: #3d5c84;
+  --sage-deep: #1b365d;
+  --sage-dark: #1b365d;
+  --rose: #e08a8a;
+  --rose-deep: #c96a6a;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-taupe: var(--taupe);
+  --color-gold: var(--gold);
+  --color-sage: var(--sage);
+  --color-sage-deep: var(--sage-deep);
+  --color-sage-dark: var(--sage-dark);
+  --color-rose: var(--rose);
+  --color-rose-deep: var(--rose-deep);
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-fraunces);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-source-sans), "Segoe UI", sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--rose) 40%, white);
+  color: var(--ink);
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+  font-family: var(--font-fraunces), Georgia, "Times New Roman", serif;
+}
+
+.floral-wash {
+  background:
+    radial-gradient(circle at 12% 18%, rgb(224 138 138 / 0.16), transparent 38%),
+    radial-gradient(circle at 88% 12%, rgb(212 164 74 / 0.14), transparent 34%),
+    radial-gradient(circle at 86% 82%, rgb(27 54 93 / 0.1), transparent 42%);
+}
