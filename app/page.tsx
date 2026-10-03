@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BrandLogo } from "@/components/BrandLogo";
 import { CornerLeaves, PressedFlower, SectionDivider } from "@/components/Botanical";
 import { CtaButtons } from "@/components/CtaButtons";
+import { PricingList } from "@/components/PricingList";
 import { site } from "@/lib/site";
 
 const steps = [
@@ -126,15 +127,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      <SectionDivider />
+
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
+        <p className="text-sm uppercase tracking-[0.22em] text-taupe">Pricing</p>
+        <h2 className="mt-3 font-serif text-3xl text-ink">Simple rates for families</h2>
+        <p className="mt-4 max-w-2xl text-ink-soft">
+          Start with a free intro call. Choose 30 or 60 minutes for weekly reading
+          support. Full details are on the services page.
+        </p>
+        <div className="mt-8">
+          <PricingList compact />
+        </div>
+        <Link
+          href="/services"
+          className="mt-6 inline-block text-sm font-medium underline"
+        >
+          See all pricing
+        </Link>
+      </section>
+
       <section className="mx-auto max-w-3xl px-5 py-16 text-center sm:px-8">
         <p className="text-sm uppercase tracking-[0.22em] text-taupe">Meet Megan</p>
         <h2 className="mt-3 font-serif text-3xl text-ink">
           A teacher, librarian, and reading specialist
         </h2>
         <p className="mt-5 text-lg leading-relaxed text-ink-soft">
-          After years in elementary classrooms and school libraries,{" "}
-          {site.teacher} now works with families who want reading support that
-          is both skilled and kind.
+          {site.teacher} is an elementary teacher, librarian, and reading
+          specialist who works with families who want reading support that is
+          both skilled and kind.
         </p>
         <Link href="/about" className="mt-5 inline-block text-sm font-medium underline">
           Read more about Megan

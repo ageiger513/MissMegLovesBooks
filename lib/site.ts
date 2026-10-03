@@ -34,3 +34,36 @@ export const scheduleConfig = {
     process.env.NEXT_PUBLIC_INTRO_SCHEDULE_URL || DEFAULT_INTRO_BOOKING,
   introEmbedUrl: DEFAULT_INTRO_EMBED,
 };
+
+export const pricing = [
+  {
+    name: "Intro call",
+    time: "20 minutes",
+    price: "Free",
+    note: "A parent conversation to share what’s going on and see if we’re a good fit.",
+  },
+  {
+    name: "Reading session",
+    time: "30 minutes",
+    price: "$55",
+    note: "A shorter visit, often a good fit for younger readers.",
+  },
+  {
+    name: "Reading session",
+    time: "60 minutes",
+    price: "$90",
+    note: "The usual weekly session for most children.",
+  },
+  {
+    name: "Eight-session pack",
+    time: "Eight 60-minute visits",
+    price: "$680",
+    note: "$85 per session when you pay for eight at once.",
+  },
+  {
+    name: "Reading assessment",
+    time: "About an hour, plus a written plan",
+    price: "$140",
+    note: "Scheduled after the intro call — not booked on this site yet.",
+  },
+] as const;

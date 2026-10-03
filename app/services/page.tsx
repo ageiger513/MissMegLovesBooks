@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { CtaButtons } from "@/components/CtaButtons";
+import { PricingList } from "@/components/PricingList";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Intro calls, reading assessments, and ongoing literacy tutoring in Burbank or online.",
+    "Intro calls, reading sessions, and literacy tutoring in Burbank or online. Free intro call; 30 minutes $55; 60 minutes $90.",
 };
 
 const services = [
@@ -69,13 +70,20 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <p className="mt-10 text-sm text-ink-soft">
-        Rates are shared directly with families. Please contact Megan or book
-        an intro call if you would like to talk about fit and pricing — you
-        will not find placeholder prices here.
-      </p>
+      <section className="mt-16">
+        <p className="text-sm uppercase tracking-[0.22em] text-taupe">Pricing</p>
+        <h2 className="mt-3 font-serif text-3xl text-ink">What sessions cost</h2>
+        <p className="mt-4 max-w-2xl leading-relaxed text-ink-soft">
+          No packages you have to guess at. The intro call is free. Weekly
+          tutoring is billed by the visit, or you can save a little with an
+          eight-session pack.
+        </p>
+        <div className="mt-8">
+          <PricingList />
+        </div>
+      </section>
 
-      <CtaButtons className="mt-8" size="lg" />
+      <CtaButtons className="mt-10" size="lg" />
     </div>
   );
 }

@@ -2,6 +2,8 @@
 
 Parent-facing website for Megan Geiger’s literacy tutoring practice in Burbank, California, with virtual sessions available.
 
+For business background, decisions, pricing notes, and what’s left to do, see [CONTEXT.md](CONTEXT.md).
+
 ## Local development
 
 ```bash

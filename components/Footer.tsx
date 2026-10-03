@@ -20,7 +20,7 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-soft">
-            Thoughtful reading support with {site.owner}, a former elementary
+            Thoughtful reading support with {site.owner}, an elementary
             teacher, school librarian, and reading specialist. In-person in{" "}
             {site.location} and virtually.
           </p>
